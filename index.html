@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLARA Air Fryer Oven - Optimized Mobile PDP (Preview)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .preview-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .content-wrapper {
+            margin-top: 48px;
+        }
+        
+        .sticky-atc {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+            z-index: 50;
+        }
+        
+        .sticky-atc.visible {
+            transform: translateY(0);
+        }
+        
+        .hero-slider {
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .hero-slider::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .hero-slide {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .trust-badge {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .preset-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .accessory-card {
+            transition: transform 0.2s;
+        }
+        
+        .accessory-card:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- PREVIEW BANNER -->
+    <div class="preview-banner">
+        📱 PREVIEW MODE - New AFO PDP Design | Mobile-Optimized | Test the Calculator! 🔥
+    </div>
+    
+    <div class="content-wrapper">
+        <!-- Header (simplified for demo) -->
+        <div class="bg-blue-900 text-white py-2 px-4 text-center text-sm font-medium">
+            🔥 Republic Day Sale: UPTO 70% Off - LIVE NOW
+        </div>
+        
+        <div class="bg-white sticky top-0 z-40 shadow-sm">
+            <div class="px-4 py-3 flex items-center justify-between">
+                <div class="text-xl font-bold">SOLARA</div>
+                <div class="flex gap-3">
+                    <button class="text-gray-600">🔍</button>
+                    <button class="text-gray-600">👤</button>
+                    <button class="text-gray-600">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. HERO SECTION WITH IMAGES -->
+        <div class="bg-white">
+            <div class="hero-slider flex overflow-x-auto snap-x snap-mandatory">
+                <div class="hero-slide w-full flex-shrink-0">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23000' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='%23fff' font-size='20' dy='0.3em'%3EAir Fryer Oven%3C/text%3E%3C/svg%3E" alt="Air Fryer Oven" class="w-full h-96 object-cover">
+                </div>
+                <div class="hero-slide w-full flex-shrink-0">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23333' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='%23fff' font-size='18' dy='0.3em'%3EWith Food Inside%3C/text%3E%3C/svg%3E" alt="With food" class="w-full h-96 object-cover">
+                </div>
+                <div class="hero-slide w-full flex-shrink-0">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23555' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='%23fff' font-size='18' dy='0.3em'%3EDigital Controls%3C/text%3E%3C/svg%3E" alt="Controls" class="w-full h-96 object-cover">
+                </div>
+            </div>
+            <div class="flex justify-center gap-2 py-3">
+                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+                <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+            </div>
+        </div>
+
+        <!-- 2. PRODUCT INFO & PRICE -->
+        <div class="bg-white px-4 pb-6">
+            <h1 class="text-2xl font-bold mb-2">SOLARA Large Digital Air Fryer Oven (12L)</h1>
+            
+            <div class="flex items-center gap-2 mb-3">
+                <div class="flex text-yellow-500">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <span class="text-sm text-gray-600">804 reviews</span>
+            </div>
+            
+            <div class="bg-red-50 border border-red-200 rounded-lg p-3 mb-4 trust-badge">
+                <div class="flex items-center gap-2 text-sm">
+                    <span class="text-red-600">🔥</span>
+                    <span class="font-semibold text-red-900">10K+ bought in past month | Free 8 accessories + eBook</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-2 mb-2">
+                <span class="text-sm text-gray-500 line-through">Rs. 12,999</span>
+                <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">Save Rs. 5,500</span>
+            </div>
+            
+            <div class="flex items-baseline gap-2 mb-4">
+                <span class="text-3xl font-bold text-blue-600">Rs. 7,499</span>
+                <span class="text-sm text-gray-600">(incl of all taxes)</span>
+            </div>
+            
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-4">
+                <p class="text-sm text-yellow-900">
+                    <span class="font-semibold">Free Shipping</span> | EMI starts at ₹264/mo. <span class="underline">No Cost EMI available</span>
+                </p>
+            </div>
+            
+            <!-- COMBO SELECTOR -->
+            <div class="mb-4">
+                <label class="block text-sm font-semibold mb-3">Choose Combo:</label>
+                
+                <div class="space-y-2">
+                    <div class="border-2 border-blue-600 bg-blue-50 rounded-lg p-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio" name="combo" checked class="w-4 h-4">
+                                    <span class="font-semibold">Air Fryer Oven</span>
+                                </div>
+                                <div class="text-xs text-gray-600 mt-1 ml-6">MRP Rs. 12,999.00</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-blue-600">Rs. 7,499</div>
+                                <div class="text-xs text-green-600 font-semibold">Save Rs. 5,500</div>
+                            </div>
+                        </div>
+                        <div class="mt-2 ml-6">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">REPUBLIC DAY SALE EXCLUSIVE PRICE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="border-2 border-gray-300 rounded-lg p-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio" name="combo" class="w-4 h-4">
+                                    <span class="font-semibold text-sm">AFO + Oil Sprayer + Silicone Basket</span>
+                                </div>
+                                <div class="text-xs text-gray-600 mt-1 ml-6">MRP Rs. 13,899</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold">Rs. 7,499</div>
+                                <div class="text-xs text-green-600 font-semibold">Save Rs. 6,400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ADD TO CART BUTTON -->
+            <button id="mainATC" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg text-lg mb-3 transition">
+                ADD TO CART
+            </button>
+            
+            <div class="flex items-center justify-center gap-2 text-sm text-green-700 mb-4">
+                <span class="text-lg">✓</span>
+                <span class="font-semibold">In Stock. Prepaid orders ship today.</span>
+            </div>
+        </div>
+
+        <!-- 3. COMPARISON TABLE - MOVED UP! -->
+        <div class="comparison-table px-4 py-6 mb-2">
+            <h2 class="text-2xl font-bold mb-4 text-center">Why Air Fryer Over Deep Frying?</h2>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="py-3 px-3 text-left font-semibold">Parameter</th>
+                            <th class="py-3 px-3 text-center font-semibold text-gray-600">Regular Cooking</th>
+                            <th class="py-3 px-3 text-center font-semibold text-blue-600">Air Fryer 🔥</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-3 px-3 font-medium">Oil Reduction</td>
+                            <td class="py-3 px-3 text-center text-gray-600">Large oil volumes</td>
+                            <td class="py-3 px-3 text-center text-blue-600 font-bold">Uses up to 70% less oil ✅</td>
+                        </tr>
+                        <tr class="border-b bg-blue-50">
+                            <td class="py-3 px-3 font-medium">Fat Content</td>
+                            <td class="py-3 px-3 text-center text-gray-600">High fat from oil</td>
+                            <td class="py-3 px-3 text-center text-blue-600 font-bold">70-80% less fat ✅</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-3 px-3 font-medium">Cooking Time</td>
+                            <td class="py-3 px-3 text-center text-gray-600">Longer times</td>
+                            <td class="py-3 px-3 text-center text-blue-600 font-bold">20-30% faster ✅</td>
+                        </tr>
+                        <tr class="border-b bg-blue-50">
+                            <td class="py-3 px-3 text-center text-gray-600">Ovens consume more</td>
+                            <td class="py-3 px-3 text-center text-blue-600 font-bold">30% less energy ✅</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-medium">Health Impact</td>
+                            <td class="py-3 px-3 text-center text-gray-600">High acrylamide</td>
+                            <td class="py-3 px-3 text-center text-blue-600 font-bold">90% less acrylamide ✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
+                <p class="text-center text-green-900 font-semibold">
+                    ✨ Reduces fat content by 70-80% | Cooks 20-30% faster | Uses 30% less energy
+                </p>
+            </div>
+        </div>
+
+        <!-- 4. AIR FRYER SAVINGS CALCULATOR - NEW! -->
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 px-4 py-6 mb-2">
+            <h2 class="text-2xl font-bold mb-2 text-center">💰 Calculate Your Savings</h2>
+            <p class="text-center text-sm text-gray-600 mb-6">Stop ordering out. Start cooking at home. Save BIG.</p>
+            
+            <div class="bg-white rounded-xl shadow-lg p-5">
+                <!-- Input Section -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold mb-2">How many times do you cook/order food per week?</label>
+                    <div class="flex items-center gap-3">
+                        <input type="range" id="mealsSlider" min="1" max="21" value="7" 
+                               class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer">
+                        <span id="mealsValue" class="text-2xl font-bold text-blue-600 min-w-[3rem] text-right">7</span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>1x/week</span>
+                        <span>21x/week</span>
+                    </div>
+                </div>
+                
+                <!-- Toggle: Zomato/Swiggy User? -->
+                <div class="mb-6 bg-orange-50 border border-orange-200 rounded-lg p-4">
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" id="foodDeliveryToggle" checked 
+                               class="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500">
+                        <div class="flex-1">
+                            <div class="font-semibold text-gray-800">I order from Zomato/Swiggy instead of cooking</div>
+                            <div class="text-xs text-gray-600">Air Fryer makes home cooking SO easy, you'll stop ordering!</div>
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- Results Section -->
+                <div class="space-y-4">
+                    <!-- FOOD DELIVERY SAVINGS - THE BIG ONE! -->
+                    <div id="foodDeliveryCard" class="bg-gradient-to-r from-orange-50 to-red-100 rounded-lg p-5 border-2 border-orange-300 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            BIGGEST SAVINGS 🔥
+                        </div>
+                        <div class="flex items-center justify-between mb-2 mt-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-3xl">🛵</span>
+                                <div>
+                                    <div class="font-bold text-gray-800">Stop Ordering Out</div>
+                                    <div class="text-xs text-gray-600">Zomato/Swiggy → Home Cooking</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold text-orange-600">₹<span id="foodDeliverySavings">12,987</span></div>
+                                <div class="text-xs text-gray-600">per month</div>
+                            </div>
+                        </div>
+                        <div class="bg-white/60 rounded-lg p-2 mt-2">
+                            <div class="text-xs text-gray-700">
+                                Yearly: <span class="font-bold text-orange-700 text-sm">₹<span id="foodDeliverySavingsYear">155,844</span></span>
+                            </div>
+                            <div class="text-xs text-gray-600 mt-1">
+                                Based on ₹500 avg per Zomato/Swiggy order vs ₹125 cooking at home
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4 border-2 border-green-200">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl">🛢️</span>
+                                <span class="font-semibold text-gray-700">Oil Savings</span>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-green-600">₹<span id="oilSavings">560</span></div>
+                                <div class="text-xs text-gray-600">per month</div>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-600">
+                            Yearly: <span class="font-bold text-green-700">₹<span id="oilSavingsYear">6,720</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-4 border-2 border-blue-200">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl">⚡</span>
+                                <span class="font-semibold text-gray-700">Energy Savings</span>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-blue-600">₹<span id="energySavings">210</span></div>
+                                <div class="text-xs text-gray-600">per month</div>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-600">
+                            Yearly: <span class="font-bold text-blue-700">₹<span id="energySavingsYear">2,520</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 rounded-lg p-4 border-2 border-orange-200">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl">⏱️</span>
+                                <span class="font-semibold text-gray-700">Time Saved</span>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-orange-600"><span id="timeSavings">3.5</span> hrs</div>
+                                <div class="text-xs text-gray-600">per month</div>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-600">
+                            Yearly: <span class="font-bold text-orange-700"><span id="timeSavingsYear">42</span> hours</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-red-50 to-red-100 rounded-lg p-4 border-2 border-red-200">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl">❤️</span>
+                                <span class="font-semibold text-gray-700">Fat Reduction</span>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-red-600"><span id="fatSavings">840</span>g</div>
+                                <div class="text-xs text-gray-600">per month</div>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-600">
+                            That's <span class="font-bold text-red-700"><span id="caloriesSaved">7,560</span> calories</span> less per month!
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Total ROI -->
+                <div class="mt-6 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-5 text-white">
+                    <div class="text-center mb-2">
+                        <div class="text-sm font-medium opacity-90">Total Savings in First Year</div>
+                        <div class="text-4xl font-bold mt-1">₹<span id="totalSavingsYear">165,084</span></div>
+                    </div>
+                    <div class="h-px bg-white/30 my-3"></div>
+                    <div class="text-center text-sm">
+                        <div class="mb-1">🎉 Air Fryer Oven pays for itself in just <span id="roiMonths" class="font-bold text-yellow-300 text-lg">1</span> month!</div>
+                        <div class="text-xs opacity-75 mt-2" id="roiMessage">After that, you're saving ₹13,757/month - that's pure profit! 💰</div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <p class="text-xs text-gray-500">
+                        *Food delivery savings based on ₹500 avg Zomato/Swiggy order vs ₹125 home cooking. Oil savings assume ₹200/L vegetable oil, 70% reduction. Energy savings assume ₹7/kWh electricity rate, 30% reduction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rest of content continues... -->
+        <div class="bg-white px-4 py-6 mb-2">
+            <h2 class="text-2xl font-bold mb-4 text-center">📱 Test the Calculator Above!</h2>
+            <div class="text-center text-gray-600 mb-4">
+                <p class="mb-2">This is a preview of the optimized mobile PDP design.</p>
+                <p class="text-sm">Based on Clarity heatmaps + GA4 funnel data showing 7.62% mobile ATC rate.</p>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <p class="text-sm text-blue-900 font-semibold mb-2">Key Optimizations:</p>
+                <ul class="text-sm text-blue-800 space-y-1">
+                    <li>✅ Comparison table moved up (was 0.15% engagement)</li>
+                    <li>✅ Food delivery savings calculator added</li>
+                    <li>✅ YouTube videos removed (0% engagement)</li>
+                    <li>✅ Sticky ATC after 2 seconds</li>
+                    <li>✅ Compressed FAQ with accordions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- STICKY ADD TO CART (appears after 2 seconds) -->
+        <div id="stickyATC" class="sticky-atc bg-white shadow-lg border-t-2 border-blue-600">
+            <div class="px-4 py-3 flex items-center justify-between">
+                <div>
+                    <div class="text-lg font-bold text-blue-600">Rs. 7,499</div>
+                    <div class="text-xs text-gray-600 line-through">Rs. 12,999</div>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Show sticky ATC after 2 seconds
+        setTimeout(() => {
+            document.getElementById('stickyATC').classList.add('visible');
+        }, 2000);
+        
+        // Air Fryer Calculator
+        const mealsSlider = document.getElementById('mealsSlider');
+        const mealsValue = document.getElementById('mealsValue');
+        const foodDeliveryToggle = document.getElementById('foodDeliveryToggle');
+        const foodDeliveryCard = document.getElementById('foodDeliveryCard');
+        
+        function calculateSavings() {
+            const mealsPerWeek = parseInt(mealsSlider.value);
+            const mealsPerMonth = mealsPerWeek * 4.33;
+            const mealsPerYear = mealsPerWeek * 52;
+            const usesDelivery = foodDeliveryToggle.checked;
+            
+            let foodDeliverySavingsMonth = 0;
+            let foodDeliverySavingsYear = 0;
+            
+            if (usesDelivery) {
+                foodDeliverySavingsMonth = Math.round(mealsPerMonth * 375);
+                foodDeliverySavingsYear = Math.round(mealsPerYear * 375);
+                foodDeliveryCard.style.display = 'block';
+            } else {
+                foodDeliveryCard.style.display = 'none';
+            }
+            
+            const oilSavingsMonth = Math.round(mealsPerMonth * 7);
+            const oilSavingsYear = Math.round(mealsPerYear * 7);
+            const energySavingsMonth = Math.round(mealsPerMonth * 4.2);
+            const energySavingsYear = Math.round(mealsPerYear * 4.2);
+            const timeSavingsMonth = (mealsPerMonth * 20 / 60).toFixed(1);
+            const timeSavingsYear = Math.round(mealsPerYear * 20 / 60);
+            const fatSavingsMonth = Math.round(mealsPerMonth * 30);
+            const caloriesSaved = Math.round(fatSavingsMonth * 9);
+            
+            const totalMonth = foodDeliverySavingsMonth + oilSavingsMonth + energySavingsMonth;
+            const totalYear = foodDeliverySavingsYear + oilSavingsYear + energySavingsYear;
+            
+            let roiMonths = totalMonth > 0 ? Math.ceil(7499 / totalMonth) : 999;
+            let roiMessage = '';
+            
+            if (roiMonths <= 1) {
+                roiMessage = `After that, you're saving ₹${totalMonth.toLocaleString('en-IN')}/month - that's pure profit! 💰`;
+            } else if (roiMonths <= 3) {
+                roiMessage = `In just ${roiMonths} months, you'll have saved more than the device cost! 🎉`;
+            } else if (roiMonths <= 12) {
+                roiMessage = `After ${roiMonths} months, it's all savings - that's ₹${totalMonth.toLocaleString('en-IN')}/month in your pocket! 💰`;
+            } else {
+                roiMessage = 'Every month of use brings you closer to break-even and beyond!';
+            }
+            
+            mealsValue.textContent = mealsPerWeek;
+            
+            if (usesDelivery) {
+                document.getElementById('foodDeliverySavings').textContent = foodDeliverySavingsMonth.toLocaleString('en-IN');
+                document.getElementById('foodDeliverySavingsYear').textContent = foodDeliverySavingsYear.toLocaleString('en-IN');
+            }
+            
+            document.getElementById('oilSavings').textContent = oilSavingsMonth.toLocaleString('en-IN');
+            document.getElementById('oilSavingsYear').textContent = oilSavingsYear.toLocaleString('en-IN');
+            document.getElementById('energySavings').textContent = energySavingsMonth.toLocaleString('en-IN');
+            document.getElementById('energySavingsYear').textContent = energySavingsYear.toLocaleString('en-IN');
+            document.getElementById('timeSavings').textContent = timeSavingsMonth;
+            document.getElementById('timeSavingsYear').textContent = timeSavingsYear;
+            document.getElementById('fatSavings').textContent = fatSavingsMonth.toLocaleString('en-IN');
+            document.getElementById('caloriesSaved').textContent = caloriesSaved.toLocaleString('en-IN');
+            document.getElementById('totalSavingsYear').textContent = totalYear.toLocaleString('en-IN');
+            document.getElementById('roiMonths').textContent = roiMonths;
+            document.getElementById('roiMessage').textContent = roiMessage;
+        }
+        
+        mealsSlider.addEventListener('input', calculateSavings);
+        foodDeliveryToggle.addEventListener('change', calculateSavings);
+        
+        calculateSavings();
+    </script>
+</body>
+</html>
